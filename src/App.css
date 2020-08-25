@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.user{
+  width:70%
+}
+.cart{
+  width:30px;
+}
