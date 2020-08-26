@@ -19,6 +19,7 @@ const User = (props) => {
                     <p> Phone: {phone} </p>
                     <p> Company: {company.name} </p>
                     <p> Country: {address.city} </p>
+                    <button onClick={()=> props.handleAddFriend(props.user)} > Add Friend </button>
                 </div>
             </div>
         </div>
