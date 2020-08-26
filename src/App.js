@@ -4,40 +4,30 @@ import './App.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import User from './components/User/User';
+import fakeData from './fakeData/user.js'
 
 function App() {
-  const [user,setUser] = useState([])
-  useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res=>res.json())
-    .then(data=>{
-    setUser(data)
-    }
-      )
-  },[])
 
-  const [img, setImg]= useState([])
-    useEffect(()=>{
-        fetch('https://pixabay.com/api/?key=18042452-f0123c87a7cb328ac449b811c&q=users&image_type=photo')
-        .then(res=>res.json())
-        .then(data=>{
-          console.log()
-        })
-    },[])
-    
-  console.log(img)
+  const [user,setUser] = useState(fakeData)
+ 
+  
+
+
+
   return (
     <div className="App">
-        <h1>User Loaded: {user.length} </h1>
-        <div className="user">
-        {
-            user.map(user=> <User user={user} img={img} > </User> )
-          }
+      <header className="App-header"> 
         
-        </div>
-        <div className="cart">
-          this is cart 
-        </div>
+          <div className="user">
+          <h1>User Loaded: {user.length} </h1>
+              {
+                user.map(user=><User user={user}  > </User> )
+              }
+          </div>
+          <div className="cart">
+            <h1>This is cart</h1>
+          </div>
+      </header>
     </div>
   );
 }
