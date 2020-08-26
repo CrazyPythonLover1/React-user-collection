@@ -20,7 +20,7 @@ function App() {
  for(let i=0; i<count.length; i++){
    const user = count[i];
    const salary = user.salary;
-   totalSalary = totalSalary + parseInt(salary);
+   totalSalary = totalSalary + parseInt(salary*12);
  }
 
 
@@ -38,16 +38,16 @@ function App() {
           </div>
           <div className="cart">
             <h2> Added Friend: {count.length} </h2>
-            <p>Added Friend List with Salary:</p>
+            <p>Added Friend List with Yearly Salary:</p>
             <ul> 
               {
                 count.map(user=> 
-                  <li style={{color:'cyan'}} > {user.username} ${user.salary}  </li> 
+                  <li style={{color:'cyan'}} > {user.username} ${user.salary*12}  </li> 
                  )              
               }
             </ul>
            <hr/>
-           <h2>Total Salary: ${totalSalary} </h2>
+           <p>Total Salary: ${totalSalary} </p>
           </div>
       </header>
     </div>
