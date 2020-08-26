@@ -1,5 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import './User.css';
+
 
 
 const User = (props) => {
@@ -19,7 +22,7 @@ const User = (props) => {
                     <p> Phone: {phone} </p>
                     <p> Company: {company.name} </p>
                     <p> Country: {address.city} </p>
-                    <button onClick={()=> props.handleAddFriend(props.user)} > Add Friend </button>
+                    <button onClick={()=> props.handleAddFriend(props.user)} >  <FontAwesomeIcon icon={faPlusCircle} /> Add Friend </button>
                 </div>
             </div>
         </div>

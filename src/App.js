@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import User from './components/User/User';
 import fakeData from './fakeData/user.js'
