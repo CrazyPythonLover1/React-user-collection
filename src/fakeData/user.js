@@ -2,6 +2,7 @@ var user =
 [
     {
       "id": 1,
+      "salary": " 764",
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
@@ -26,6 +27,7 @@ var user =
     },
     {
       "id": 2,
+      "salary": " 954",
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
@@ -50,6 +52,7 @@ var user =
     },
     {
       "id": 3,
+      "salary": " 1391",
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
@@ -74,6 +77,7 @@ var user =
     },
     {
       "id": 4,
+      "salary": " 1414",
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
@@ -98,6 +102,7 @@ var user =
     },
     {
       "id": 5,
+      "salary": " 1384",
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
@@ -122,6 +127,7 @@ var user =
     },
     {
       "id": 6,
+      "salary": " 2843",
       "name": "Mrs. Dennis Schulist",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
@@ -146,6 +152,7 @@ var user =
     },
     {
       "id": 7,
+      "salary": " 544",
       "name": "Kurtis Weissnat",
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
@@ -170,6 +177,7 @@ var user =
     },
     {
       "id": 8,
+      "salary": " 744",
       "name": "Nicholas Runolfsdottir V",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
@@ -194,6 +202,7 @@ var user =
     },
     {
       "id": 9,
+      "salary": " 944",
       "name": "Glenna Reichert",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
@@ -218,6 +227,7 @@ var user =
     },
     {
       "id": 10,
+      "salary": " 2944",
       "name": "Clementina DuBuque",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
@@ -242,6 +252,7 @@ var user =
     },
     {
       "id": 11,
+      "salary": "1944",
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
@@ -266,6 +277,7 @@ var user =
     },
     {
       "id": 12,
+      "salary": "3944",
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
@@ -290,6 +302,7 @@ var user =
     },
     {
       "id": 13,
+      "salary": "18844",
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
@@ -314,6 +327,7 @@ var user =
     },
     {
       "id": 14,
+      "salary": " 1384",
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
@@ -338,6 +352,7 @@ var user =
     },
     {
       "id": 15,
+      "salary": " 2144",
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",

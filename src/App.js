@@ -16,7 +16,16 @@ function App() {
     const newCount = [...count, user];
     setCount(newCount);
   }
-  console.log(count);
+  
+ let totalSalary = 0;
+ for(let i=0; i<count.length; i++){
+   const user = count[i];
+   const salary = user.salary;
+   totalSalary = totalSalary + parseInt(salary);
+ }
+
+
+
 
   return (
     <div className="App">
@@ -25,19 +34,21 @@ function App() {
           <div className="user">
           <h1 style={{textAlign:"center"}}>User Loaded: {users.length} </h1>
               {
-                users.map(user=><User user={user} handleAddFriend={handleAddFriend} > </User> )
+                users.map(user=><User user={user} handleAddFriend={handleAddFriend} key={user.id}  > </User> )
               }
           </div>
           <div className="cart">
-            <h1>This is cart</h1>
             <h2> Added Friend: {count.length} </h2>
-            <p>Added Friend List:</p>
+            <p>Added Friend List with Salary:</p>
             <ul> 
               {
-                count.map(user=> <li style={{color:'cyan'}} > {user.username} </li> )
+                count.map(user=> 
+                  <li style={{color:'cyan'}} > {user.username} ${user.salary}  </li> 
+                 )              
               }
             </ul>
-           
+           <hr/>
+           <h2>Total Salary: ${totalSalary} </h2>
           </div>
       </header>
     </div>
