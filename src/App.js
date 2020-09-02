@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import UserDetail from './components/UserDetail/UserDetail';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           <Switch>
             <Route path="/home">
               <Home/>
+            </Route>
+            <Route path="/user/:id">
+              <UserDetail/>
             </Route>
             <Route path="/">
               <Home/>
