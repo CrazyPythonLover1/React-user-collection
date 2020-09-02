@@ -2,10 +2,17 @@ import React from 'react';
 import { useState } from 'react';
 import User from '../User/User';
 import fakeData from '../../fakeData/user'
+import { useEffect } from 'react';
 
 const Home = () => {
 
     const [users,setUser] = useState(fakeData);
+
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => setUser(data))
+    },[])
 
     const [count, setCount] = useState([]);
    
