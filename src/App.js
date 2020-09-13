@@ -9,13 +9,16 @@ import {
   Link
 } from "react-router-dom";
 import UserDetail from './components/UserDetail/UserDetail';
+import ReducerCount from './components/ReducerCount/ReducerCount';
 
 function App() {
 
 
   return (
     <div className="App">
+      <ReducerCount></ReducerCount>
       <header className="App-header"> 
+      
         <Router>
           <Switch>
             <Route path="/home">
