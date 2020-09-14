@@ -7,7 +7,11 @@ const PatientManagement = () => {
     const [state, dispatch] = useReducer(patientReducer,patientState);
     const handleSubmit = event =>{
         event.preventDefault();
-        dispatch({type: 'ADD_PREVENT', name: nameRef.current.value})
+        dispatch({
+            type: 'ADD_PREVENT', 
+            name: nameRef.current.value, 
+            id=state.patients.length + 1
+        })
         console.log(nameRef.current.value);
     }
     return (
