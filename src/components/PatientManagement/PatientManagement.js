@@ -8,11 +8,11 @@ const PatientManagement = () => {
     const handleSubmit = event =>{
         event.preventDefault();
         dispatch({
-            type: 'ADD_PREVENT', 
+            type: 'ADD_PATIENT', 
             name: nameRef.current.value, 
-            id=state.patients.length + 1
+            id:state.patients.length + 1
         })
-        console.log(nameRef.current.value);
+        nameRef.current.value = '';
     }
     return (
         <div>
@@ -20,6 +20,8 @@ const PatientManagement = () => {
             <form onSubmit={handleSubmit} action="">
                 <input ref={nameRef}/>
                 <br/>
+                {state.patients.map(pt => <li key={pt.id}
+                onClick={()=>dispatch({type:'REMOVE_PATIENT',id:pt.id})}> {pt.name }</li>)}
                 <br/>
             </form>
         </div>
