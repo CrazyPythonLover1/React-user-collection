@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import UserDetail from './components/UserDetail/UserDetail';
 import ReducerCount from './components/ReducerCount/ReducerCount';
+import PatientManagement from './components/PatientManagement/PatientManagement';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <ReducerCount></ReducerCount>
+      <PatientManagement></PatientManagement>
       <header className="App-header"> 
       
         <Router>
